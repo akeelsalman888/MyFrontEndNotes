@@ -41,4 +41,5 @@ numbers.forEach(function(num) {
     console.log(num); // 1 2 3
 });
 
+Important to note, the ! operator has a higher precedence than the && and || operators. This means that expressions with ! will be evaluated first before expressions with && and ||. It is important to keep operator precedence in mind when writing complex expressions, as it can affect the outcome of your code.
 
