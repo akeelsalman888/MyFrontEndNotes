@@ -43,3 +43,5 @@ numbers.forEach(function(num) {
 
 Important to note, the ! operator has a higher precedence than the && and || operators. This means that expressions with ! will be evaluated first before expressions with && and ||. It is important to keep operator precedence in mind when writing complex expressions, as it can affect the outcome of your code.
 
+all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
+
