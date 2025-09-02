@@ -48,3 +48,5 @@ all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
 Iteration - each execution of the loop's code block or every time the loop runs.
 Iterator - a variable used to keep track of the current iteration count, customarily i or j for nested loops. This can be any variable name
 
+By using i++, the increment operator increments by one and returns the value before incrementing.  let i = 5;  console.log(i++); // prints 5 (then i becomes 6)
+
