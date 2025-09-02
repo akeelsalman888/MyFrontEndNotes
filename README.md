@@ -45,3 +45,6 @@ Important to note, the ! operator has a higher precedence than the && and || ope
 
 all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
 
+Iteration - each execution of the loop's code block or every time the loop runs.
+Iterator - a variable used to keep track of the current iteration count, customarily i or j for nested loops. This can be any variable name
+
