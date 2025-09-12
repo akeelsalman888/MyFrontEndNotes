@@ -50,3 +50,29 @@ Iterator - a variable used to keep track of the current iteration count, customa
 
 By using i++, the increment operator increments by one and returns the value before incrementing.  let i = 5;  console.log(i++); // prints 5 (then i becomes 6)
 
+for of loop: Allows you to iterate over the values of an iterable object, such as an Array.
+
+Using an Array Literal:
+
+    var myArray = [];  // Output: [] , an empty Array literal
+
+    var myOtherArray = [1, 2, 3];  // Output: [1,2,3]
+
+    var myStringArray = ["apple", "banana", "orange"];  // Output: ["apple","banana","orange"]
+Using an Array Constructor:
+
+    let numsArray = new Array(3);  // Output: [ , , ]  an empty Array with 3 slots
+
+    let myOtherNumsArr = new Array(1, 2, 3);  // Output: [1, 2, 3]
+
+    let fruitsArr = Array ("apple", "banana", "orange");  // Output: ["apple","banana","orange"]
+
+     let numbers = [1, 2, 3, 4, 5];
+    numbers.length = 3;
+    console.log(numbers); // Output: [1, 2, 3]
+
+      let numbers = [1, 2, 3];
+    numbers.length = 5;
+    console.log(numbers);  // Output: [1, 2, 3, undefined, undefined]
+    
+//array.splice(startIndex, numOfElementToBeRemoved, item1, item2, ...);
