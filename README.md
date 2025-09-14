@@ -76,3 +76,17 @@ Using an Array Constructor:
     console.log(numbers);  // Output: [1, 2, 3, undefined, undefined]
     
 //array.splice(startIndex, numOfElementToBeRemoved, item1, item2, ...);
+
+Array.prototype.unshift() has similar behavior to push(), but applied to the start of an array.
+
+| Method             | What it does                              | Mutates original array? | Return value     | Example                                               |
+| ------------------ | ----------------------------------------- | ----------------------- | ---------------- | ----------------------------------------------------- |
+| **`push()`**       | Adds elements to the **end** of an array  | ✅ Yes                   | New array length | `let arr=[1,2]; arr.push(3); // arr=[1,2,3]`          |
+| **Spread (`...`)** | Expands array elements into another array | ❌ No                    | A new array      | `let arr=[1,2]; let newArr=[...arr,3]; // [1,2,3]`    |
+| **`concat()`**     | Merges arrays or values into a new array  | ❌ No                    | A new array      | `let arr=[1,2]; let newArr=arr.concat(3); // [1,2,3]` |
+
+push() = change same array.
+
+spread = copy/expand into new array.
+
+concat() = merge into new array.
