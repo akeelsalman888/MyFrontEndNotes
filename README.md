@@ -90,3 +90,14 @@ push() = change same array.
 spread = copy/expand into new array.
 
 concat() = merge into new array.
+
+
+An Object is a variable that can hold many variables.
+
+Objects are collections of key-value pairs, where each key (known as property names) has a value.
+
+Objects can describe anything like houses, cars, people, animals, or any other subjects.
+
+Different cars have the same properties, but the property values can differ from car to car.
+
+Different cars have the same methods, but the methods can be performed at different times.
