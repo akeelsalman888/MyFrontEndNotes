@@ -101,3 +101,59 @@ Objects can describe anything like houses, cars, people, animals, or any other s
 Different cars have the same properties, but the property values can differ from car to car.
 
 Different cars have the same methods, but the methods can be performed at different times.
+
+
+//CLass Declaration VS CLass Expression
+// Class Declaration
+console.log(A); // ❌ ReferenceError
+class A {}
+
+// Class Expression
+const B = class {};
+console.log(B); // ✅ [class B]
+Explanation:
+
+A (declaration) cannot be used before it’s declared → ReferenceError.
+
+B (expression) behaves like a regular variable → only exists after assignment.
+
+You also can do anonymous expressions:
+
+js
+Copy code
+const C = class {};
+console.log(C.name); // "" (empty)
+
+
+
+
+// named class expression example:
+
+const D = class MyClass {
+  sayHi() { console.log("Hi"); }
+};
+
+console.log(D.name); // "MyClass"
+
+const obj = new D();
+obj.sayHi(); // "Hi"
+
+// But MyClass is NOT accessible outside
+console.log(typeof MyClass); // ❌ ReferenceError
+
+
+Key points:
+
+The name (MyClass) exists only inside the class body.
+
+Outside, you must use the variable (D) to refer to the class.
+
+So compared to a declaration:
+
+class E {}
+console.log(E.name); // "E"
+
+
+E is accessible anywhere in its scope.
+
+This is the subtle but important difference.
