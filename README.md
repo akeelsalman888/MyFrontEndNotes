@@ -157,3 +157,6 @@ console.log(E.name); // "E"
 E is accessible anywhere in its scope.
 
 This is the subtle but important difference.
+
+debugger:  a computer program that helps find and correct errors in other computer programs.
+breakpoint:  a signal that informs the debugger to temporarily suspend execution of the program at a certain point in the code.
