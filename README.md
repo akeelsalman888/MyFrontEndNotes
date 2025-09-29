@@ -4,6 +4,7 @@
 REOURCES
 ***********
 Week 1: HTML
+
 What are semantic tags in HTML, and why are they important?
 HTML Validation: Explore the importance of HTML validation and how it can help ensure well-formed and error-free web pages. Provide a small contextual example.
 Explore the role of meta tags in HTML for SEO. Research common meta tags such as <title>, <meta name="description">, and <meta name="keywords">. Investigate their impact on search engine rankings and best practices for optimizing them.
@@ -11,6 +12,7 @@ What is the difference between a block-level element and an inline element?
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Week 2: CSS_github
+
 https://git-scm.com/docs
 https://git-scm.com/docs/git#_git_commands
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://training.github.com/downloads/github-git-cheat-sheet.pdf
@@ -23,6 +25,7 @@ Investigate the usage and benefits of CSS selectors. Research the different type
 Explore the CSS box model and its significance in determining the layout and spacing of elements on a webpage. Research the components of the box model, including content, padding, border, and margin.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 3: Bootstrap
+
 https://getbootstrap.com/docs/5.0/migration/
 
 Name five different Bootstrap components and describe how they work.
@@ -33,6 +36,7 @@ What are some alternatives to Bootstrap? Provide a short summary of one that int
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 4: JS1 - JavaScript Introduction
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://docs.oracle.com/javase/tutorial/
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Adding_interactivity
@@ -42,6 +46,7 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Y
 Week 5: JS2 - Loops and Conditions
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 6: JS3 - Arrays & Functions
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties
