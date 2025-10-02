@@ -117,6 +117,20 @@ Research the role of the 'this' keyword in JavaScript classes and how it refers 
 What is "encapsulation" in JavaScript?
 What are the differences between instance methods and static methods in JavaScript classes?
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Week 9: JS6 - DevTools, Debugging, & Unit Tests
+https://developer.chrome.com/docs/devtools/overview/
+https://developer.chrome.com/docs/devtools/open/
+https://developer.chrome.com/docs/devtools/shortcuts/
+https://news.yale.edu/2017/02/10/grace-murray-hopper-1906-1992-legacy-innovation-and-service
+https://code.visualstudio.com/docs/debugtest/debugging
+https://jestjs.io/docs/getting-started               //NEW TESTING TOOL
+https://mochajs.org/next/
+https://mochajs.org/#getting-started                // OLD ONE
+https://www.chaijs.com/
+https://www.chaijs.com/guide/
+https://www.w3schools.com/js/js_debugging.asp
+https://agilealliance.org/glossary/tdd/
+https://dev.to/pat_the99/basics-of-javascript-test-driven-development-tdd-with-jest-o3c
 
 
 
