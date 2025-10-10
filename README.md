@@ -322,6 +322,33 @@ class E {}
 console.log(E.name); // "E"
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Week 10: JavaScript & DOM Manipulation
+https://developer.mozilla.org/en-US/docs/Web/API
+https://www.guvi.in/blog/guide-for-html-dom/
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+http://developer.mozilla.org/en-US/docs/Web/API/Node
+https://www.w3schools.com/jsref/prop_node_textcontent.asp
+https://www.w3schools.com/jsref/prop_html_style.asp
+https://www.w3schools.com/jsref/prop_element_classlist.asp
+https://www.w3schools.com/jsref/met_domtokenlist_toggle.asp
+https://www.w3schools.com/jsref/met_domtokenlist_add.asp
+https://www.w3schools.com/jsref/dom_obj_style.asp
+https://www.w3schools.com/jsref/met_document_createelement.asp
+https://www.youtube.com/watch?v=l-0nPnSvbX8
+https://www.youtube.com/watch?v=on9p11gv1k4&t=163s
+https://www.youtube.com/watch?v=8LWQNnVAMh4
+https://www.youtube.com/watch?v=RQ40ZilvCOg
+https://www.youtube.com/watch?v=XF1_MlZ5l6M
+DOM Research Details
+List and explain the JavaScript methods that enable us to select elements from the DOM.
+What is the document object? What are some other methods available on the document object that don't select elements from the DOM? Why is the virtual DOM faster?
+What are the differences between the innerHTML and textContent properties in the DOM?
+What is the purpose of the createElement, appendChild, and removeChild methods in the DOM?
+Investigate the concept of event listeners in JavaScript and how they can be used to respond to user interactions. Research how to attach event listeners to HTML elements and handle events such as clicks, mouse movements, or keyboard input. 
+
+
+
 E is accessible anywhere in its scope.
 
 This is the subtle but important difference.
