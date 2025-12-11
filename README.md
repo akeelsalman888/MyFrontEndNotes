@@ -1,10 +1,9 @@
-# MyFrontEndNotes
+# JS-Notes
 
 ************
 REOURCES
 ***********
 Week 1: HTML
-
 What are semantic tags in HTML, and why are they important?
 HTML Validation: Explore the importance of HTML validation and how it can help ensure well-formed and error-free web pages. Provide a small contextual example.
 Explore the role of meta tags in HTML for SEO. Research common meta tags such as <title>, <meta name="description">, and <meta name="keywords">. Investigate their impact on search engine rankings and best practices for optimizing them.
@@ -12,7 +11,6 @@ What is the difference between a block-level element and an inline element?
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Week 2: CSS_github
-
 https://git-scm.com/docs
 https://git-scm.com/docs/git#_git_commands
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://training.github.com/downloads/github-git-cheat-sheet.pdf
@@ -25,7 +23,6 @@ Investigate the usage and benefits of CSS selectors. Research the different type
 Explore the CSS box model and its significance in determining the layout and spacing of elements on a webpage. Research the components of the box model, including content, padding, border, and margin.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 3: Bootstrap
-
 https://getbootstrap.com/docs/5.0/migration/
 
 Name five different Bootstrap components and describe how they work.
@@ -36,7 +33,6 @@ What are some alternatives to Bootstrap? Provide a short summary of one that int
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 4: JS1 - JavaScript Introduction
-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://docs.oracle.com/javase/tutorial/
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Adding_interactivity
@@ -46,7 +42,6 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Y
 Week 5: JS2 - Loops and Conditions
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 6: JS3 - Arrays & Functions
-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties
@@ -131,197 +126,6 @@ https://www.chaijs.com/guide/
 https://www.w3schools.com/js/js_debugging.asp
 https://agilealliance.org/glossary/tdd/
 https://dev.to/pat_the99/basics-of-javascript-test-driven-development-tdd-with-jest-o3c
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Why is let used instead of VAR?
-let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, 
-unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
-************************************
-
-**Read about Execution Context and Lexical Environmnet.
-
-**There are two kinds of Execution Context in JavaScript:
-1.Global Execution Context (GEC)
-2.Function Execution Context (FEC)
-
-++ Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script ++ 
-
-**Clouser ???
-
-Encapsulation = “Hide the data inside a capsule and control access to it.”
-Abstraction = “Hide the complex implementation and show only the necessary functionality.”
-Method overriding: Both Dog and Cat override the speak method from Animal.
-Polymorphism: The makeAnimalSpeak function treats Dog and Cat instances as objects of type Animal, demonstrating that the same method speak() behaves differently based on the object.
- polymorphism is advantageous because it enables programmers to create objects with identical functionality, i.e., functions with identical names that operate identically. In some other areas of the OOP framework, you can, however, change some portions of the shared code or even the entire
-
-
-// while
-let i = 0;
-while (i < 5) {
-    console.log(i);
-    i++;
-}
-
-//do...while
-let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 5);
-
-
-//for
-for (let i = 0; i < 5; i++) {
-    console.log(i); // 0 1 2 3 4
-}
-
-
-//for...in
-let person = {name: "Akeel", age: 20};
-for (let key in person) {
-    console.log(key); // name, age
-    console.log(person[key]); // Akeel, 20
-}
-
-
-//for...of
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-    console.log(color); // red, green, blue
-}
-
-//forEach
-let numbers = [1, 2, 3];
-numbers.forEach(function(num) {
-    console.log(num); // 1 2 3
-});
-
-Important to note, the ! operator has a higher precedence than the && and || operators. This means that expressions with ! will be evaluated first before expressions with && and ||. It is important to keep operator precedence in mind when writing complex expressions, as it can affect the outcome of your code.
-
-all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
-
-Iteration - each execution of the loop's code block or every time the loop runs.
-Iterator - a variable used to keep track of the current iteration count, customarily i or j for nested loops. This can be any variable name
-
-By using i++, the increment operator increments by one and returns the value before incrementing.  let i = 5;  console.log(i++); // prints 5 (then i becomes 6)
-
-for of loop: Allows you to iterate over the values of an iterable object, such as an Array.
-
-Using an Array Literal:
-
-    var myArray = [];  // Output: [] , an empty Array literal
-
-    var myOtherArray = [1, 2, 3];  // Output: [1,2,3]
-
-    var myStringArray = ["apple", "banana", "orange"];  // Output: ["apple","banana","orange"]
-Using an Array Constructor:
-
-    let numsArray = new Array(3);  // Output: [ , , ]  an empty Array with 3 slots
-
-    let myOtherNumsArr = new Array(1, 2, 3);  // Output: [1, 2, 3]
-
-    let fruitsArr = Array ("apple", "banana", "orange");  // Output: ["apple","banana","orange"]
-
-     let numbers = [1, 2, 3, 4, 5];
-    numbers.length = 3;
-    console.log(numbers); // Output: [1, 2, 3]
-
-      let numbers = [1, 2, 3];
-    numbers.length = 5;
-    console.log(numbers);  // Output: [1, 2, 3, undefined, undefined]
-    
-//array.splice(startIndex, numOfElementToBeRemoved, item1, item2, ...);
-
-Array.prototype.unshift() has similar behavior to push(), but applied to the start of an array.
-
-| Method             | What it does                              | Mutates original array? | Return value     | Example                                               |
-| ------------------ | ----------------------------------------- | ----------------------- | ---------------- | ----------------------------------------------------- |
-| **`push()`**       | Adds elements to the **end** of an array  | ✅ Yes                   | New array length | `let arr=[1,2]; arr.push(3); // arr=[1,2,3]`          |
-| **Spread (`...`)** | Expands array elements into another array | ❌ No                    | A new array      | `let arr=[1,2]; let newArr=[...arr,3]; // [1,2,3]`    |
-| **`concat()`**     | Merges arrays or values into a new array  | ❌ No                    | A new array      | `let arr=[1,2]; let newArr=arr.concat(3); // [1,2,3]` |
-
-push() = change same array.
-
-spread = copy/expand into new array.
-
-concat() = merge into new array.
-
-
-An Object is a variable that can hold many variables.
-
-Objects are collections of key-value pairs, where each key (known as property names) has a value.
-
-Objects can describe anything like houses, cars, people, animals, or any other subjects.
-
-Different cars have the same properties, but the property values can differ from car to car.
-
-Different cars have the same methods, but the methods can be performed at different times.
-
-
-//CLass Declaration VS CLass Expression
-// Class Declaration
-console.log(A); // ❌ ReferenceError
-class A {}
-
-// Class Expression
-const B = class {};
-console.log(B); // ✅ [class B]
-Explanation:
-
-A (declaration) cannot be used before it’s declared → ReferenceError.
-
-B (expression) behaves like a regular variable → only exists after assignment.
-
-You also can do anonymous expressions:
-
-js
-Copy code
-const C = class {};
-console.log(C.name); // "" (empty)
-
-
-
-
-// named class expression example:
-
-const D = class MyClass {
-  sayHi() { console.log("Hi"); }
-};
-
-console.log(D.name); // "MyClass"
-
-const obj = new D();
-obj.sayHi(); // "Hi"
-
-// But MyClass is NOT accessible outside
-console.log(typeof MyClass); // ❌ ReferenceError
-
-
-Key points:
-
-The name (MyClass) exists only inside the class body.
-
-Outside, you must use the variable (D) to refer to the class.
-
-So compared to a declaration:
-
-class E {}
-console.log(E.name); // "E"
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Week 10: JavaScript & DOM Manipulation
 https://developer.mozilla.org/en-US/docs/Web/API
@@ -347,11 +151,300 @@ What are the differences between the innerHTML and textContent properties in the
 What is the purpose of the createElement, appendChild, and removeChild methods in the DOM?
 Investigate the concept of event listeners in JavaScript and how they can be used to respond to user interactions. Research how to attach event listeners to HTML elements and handle events such as clicks, mouse movements, or keyboard input. 
 
+style.display → changes style directly in JS (quick fix).
+classList → tells the element to use or stop using a CSS class (cleaner, reusable).
+
+why it's called node element why it's not only element is there any diffrence between them in short please?
+Yes — there is a small difference, and here’s the short version:
+Element → specifically an HTML tag like <div>, <li>, <p>.
+Node → a more general term in the DOM that can be any type of object in the document, including:
+Elements (<div>, <li>)
+Text inside elements ("Hello")
+Comments (<!-- comment -->)
+The document itself
+✅ So: all elements are nodes, but not all nodes are elements.
+In your example:
+const todoItem = document.createElement('li');
+todoItem is an element node, because it’s an actual <li> tag.
+
+<p>Hello</p>
+This has 2 nodes:
+<p> → element node
+Hello → text node
+✅ <p> is both an element and a node
+❌ Hello is a node, but not an element
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Week 11: JQuery
+Coding Steps:
+Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+Create a Tic-Tac-Toe game grid using your HTML element of choice.
+When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+A heading should say whether it is X's or O's turn and change with each move made.
+A button should be available to clear the grid and restart the game.
+When a player has won, or the board is full and the game results in a dr
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Week 12: API's and Fetching
+Concepts: Front-End vs Back-End: Build an understanding of the roles of a Front-End and Back-End, and how they work together
+Fetching: Getting Data From an API: Get data from a free public API and show it in an app
+Tools: Network Tab: Use the Network Tab of the Developer Tools to debug fetch requests and responses
+Tools: json-server: Set up json-server to use as a practice backend
+Fetching: Creating, Updating & Deleting: Make POST, DELETE, and PUT requests to an API
+Fetching: Data Syncing: Keep data synced between Front-End state and a Back-End database
+ https://www.w3schools.com/whatis/whatis_json.asp
+ https://www.w3schools.com/js/js_json_parse.asp
+ https://www.w3schools.com/js/js_json_stringify.asp
+ https://www.w3schools.com/nodejs/nodejs_rest_api.asp
+ https://restfulapi.net/http-status-codes/
+ https://www.geeksforgeeks.org/javascript/javascript-fetch-method/
+ https://dmitripavlutin.com/javascript-fetch-async-await/
+ https://jsonplaceholder.typicode.com/
+ https://www.npmjs.com/package/json-server
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+Week13_pre_React
+https://vite.dev/guide/
+https://www.w3schools.com/react/react_es6_spread.asp
+https://www.w3schools.com/js/js_destructuring.asp
+https://www.w3schools.com/typescript/typescript_intro.php
+//////////////////////////////////////////////////////////////////////
+Week14_ Intro to React
+ https://www.youtube.com/watch?v=8pDqJVdNa44
+https://www.geeksforgeeks.org/javascript/what-is-export-default-in-javascript/
+https://www.geeksforgeeks.org/reactjs/reactjs-introduction/
+ https://www.geeksforgeeks.org/reactjs/reactjs-virtual-dom/
+ https://www.geeksforgeeks.org/reactjs/what-is-diffing-algorithm/
+https://www.geeksforgeeks.org/reactjs/what-are-single-page-apps/
+https://react.dev/learn
+https://www.w3schools.com/react/react_jsx.asp
+https://www.geeksforgeeks.org/reactjs/reactjs-components/
+https://www.geeksforgeeks.org/reactjs/reactjs-props/
+https://www.geeksforgeeks.org/reactjs/how-to-setup-reactjs-with-vite/
+https://www.youtube.com/watch?v=0sSYmRImgRY
+---------------------------
+https://stackblitz.com/edit/stackblitz-starters-jpd1tz?file=src%2Findex.js 
+https://stackblitz.com/edit/stackblitz-starters-hulcvd?file=src%2FApp.js
+---------------------------
+Real DOM → Created by the browser (built into HTML).
+Virtual DOM → Created by React team (Facebook).
+Shadow DOM → Created by browser vendors (W3C Web Components standard).
+
+ React uses a Virtual DOM to optimize UI rendering. Instead of updating the entire real DOM directly, React:
+ =Creates a lightweight copy of the DOM (Virtual DOM).
+ =Compares it with the previous version to detect changes (diffing).
+ =Updates only the changed parts in the actual DOM (reconciliation), improving performance.
+
+ 1. Named Exports
+Named exports are used when you want to export multiple values from a module.
+Each exported value must be imported by its exact name, which enforces consistency and clarity in your code.
+// Exporting individual features
+
+export let name1 = …,    name2 = …, …, nameN; // also var, const
+
+// Export list
+
+export { name1, name2, …, nameN };
+
+//Exporting everything at once
+
+export { object, number, x, y, boolean, string }
+
+// Renaming exports
+
+export { variable1 as name1, variable2 as name2, …, nameN };
+
+// export features declared earlier
+
+export { myFunction, myVariable }; 
+
+//file math.js
+function square(x) {
+    return x * x;
+}
+function cube(x) {
+    return x * x * x;
+}
+export { square, cube };
 
 
-E is accessible anywhere in its scope.
+//while importing square function in test.js
+import { square, cube } from './math;
+console.log(square(8)) //64
+console.log(cube(8)) //512
 
-This is the subtle but important difference.
+2.Default Exports
+Default exports are used when you want to export a single primary object, function, or variable from a module. This type of export allows you to import the value using any name, providing flexibility and simplifying the import process for the module's main content.
 
-debugger:  a computer program that helps find and correct errors in other computer programs.
-breakpoint:  a signal that informs the debugger to temporarily suspend execution of the program at a certain point in the code.
+Example: In this example, we are exporting the variable by using "export default" keywords.
+
+
+// file module.js
+let x = 4;
+export default x;
+
+// test.js
+// while importing x in test.js
+import y from './module';
+// note that y is used import x instead of 
+// import x, because x was default export
+console.log(y);
+// output will be 4
+
+//Files inside react app
+1. App.jsx
+This is your main React component — where you build your actual app’s content.
+💡 Think of it like the “heart” of your app.
+Here you:
+Write your HTML-like JSX code (what the user sees).
+Add logic (like buttons, text, counters, etc.).
+Use state and other React features.
+🧠 Example: You’ll add new components, import others, or build your pages here.
+
+🎨 2. App.css
+This file controls the style of App.jsx.
+💡 Think of it as the “clothes” your app wears.
+You use it to change colors, layout, font, button styles, etc.
+🧠 Example: If your button color looks wrong — you fix it here.
+
+🎨 3. index.css
+This is the global style file — it affects the whole website, not just one component.
+💡 Think of it as your app’s “default background and font settings.”
+You can set things like:
+Page background color
+Default font
+Margin, padding resets
+
+🌐 4. index.html
+This is the real webpage (the only HTML file).
+React puts your entire app inside one <div> here:
+<div id="root"></div>
+That’s the spot React “mounts” your app into using JavaScript.
+💡 You rarely edit this file — except to change the page title or add metadata.
+
+⚙️ 5. main.jsx
+This is your entry point / setup file.
+It tells React:
+“Hey, take the <App /> component and show it inside the <div id='root'> in index.html.”
+
+💡 Think of it like a “switch” that turns your app on.
+You’ll only edit this if you add global tools (like React Router or Context).
+
+🔁 Summary Table
+File	           Role	You              usually edit it?
+App.jsx	     Your main app content     	✅ Yes
+App.css	     Styles for App.jsx        	✅ Yes
+index.css	   Global styles	             ✅ Sometimes
+index.html	  Root HTML file	            ⚠️ Rarely
+main.jsx	    Starts the app	            ⚠️ Rarely
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+ Week 15 – React State & Hooks
+
+https://www.youtube.com/watch?v=g8-Xrpl_Uhk&t=107s
+https://www.geeksforgeeks.org/reactjs/what-is-state-in-react/
+https://react.dev/reference/react/useState
+https://www.youtube.com/watch?v=IYvD9oBCuJI
+https://www.youtube.com/watch?v=XvURBpFxdGw
+https://stackblitz.com/edit/stackblitz-starters-hq8wiu?file=src%2FApp.js
+https://stackblitz.com/edit/react-hvwk4m?file=src%2FApp.js
+
+
+
+Week 16 – React useEffect & Lifecycle
+https://www.youtube.com/watch?v=-4XpG5_Lj_o
+https://www.w3schools.com/react/react_useeffect.asp
+https://react.dev/reference/react/useEffect
+https://overreacted.io/a-complete-guide-to-useeffect/
+https://react.dev/learn/you-might-not-need-an-effect
+https://www.geeksforgeeks.org/reactjs/reactjs-useeffect-hook/
+https://stackblitz.com/edit/stackblitz-starters-os7xlw?file=src%2FApp.js
+https://stackblitz.com/edit/stackblitz-starters-9w9cti?file=src%2FApp.js
+https://stackblitz.com/edit/stackblitz-starters-ddjcyk?file=src%2FApp.js
+
+React Router:
+Basics: https://stackblitz.com/edit/stackblitz-starters-jd2qbf?file=src%2FApp.js
+Nested routes: https://stackblitz.com/edit/stackblitz-starters-kvirvq?file=src%2FApp.js
+React Styling patterns: https://stackblitz.com/edit/react-ef3awj?file=src%2FApp.js
+
+
+
+
+
+React Routing, Styling and Deployment Resources
+React Router - https://reactrouter.com/home
+React Router Youtube Playlist: https://www.youtube.com/playlist?list=PLCVRCLNdg3_s8jkO-w6x6v6qaxRNJpFHG
+Children prop:
+https://www.w3schools.com/react/react_props_children.asp
+https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891
+Styling Practices: https://www.freecodecamp.org/news/how-to-style-react-components/
+Common CSS libraries:
+Tailwind CSS (used not just with React): https://tailwindcss.com/docs/installation/using-vite
+Daisy UI (built on top of Tailwind CSS): https://daisyui.com/docs/install/
+CSS-in-JS Libraries
+Styled Components: https://styled-components.com/
+Emotion: https://emotion.sh/docs/introduction
+UI Component Libraries:
+Material UI (MUI): https://mui.com/material-ui/
+Chakra UI: https://chakra-ui.com/
+React Bootstrap (old but still used): https://react-bootstrap.netlify.app/
+Deployment options:
+Vercel: https://vercel.com/ (easiest)
+Netlify: https://www.netlify.com/
+AWS Amplify: https://aws.amazon.com/amplify/ (for larger React apps)
+Firebase: https://firebase.google.com/ (for React apps that use Firebase usually)
+Overall instructions: https://www.tatvasoft.com/blog/deploy-react-app/
+Career Prep:
+LinkedIn: https://www.linkedin.com/learning/linkedin-profiles-for-technical-professionals/why-use-linkedin-to-get-you-a-job?u=26193226
+Danny Thompson (LinkedIn): https://www.linkedin.com/in/dthompsondev/
+100Devs: https://leonnoel.com/100devs/
+Commit Your Code: https://www.commityourcode.com/
+Great Frontend: https://www.greatfrontend.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Why is let used instead of VAR?
+let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, 
+unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
+************************************
+If you use var outside of a function, it belongs to the global scope.
+
+If you use var inside of a function, it belongs to that function.
+
+If you use var inside of a block, i.e. a for loop, the variable is still available outside of that block.
+
+A callback function is a function you pass to another function so it can be executed later.
+
+
+
+
+
+**Read about Execution Context and Lexical Environmnet.
+
+**There are two kinds of Execution Context in JavaScript:
+1.Global Execution Context (GEC)
+2.Function Execution Context (FEC)
+
+++ Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script ++ 
+
+**Clouser ???
+
+Encapsulation = “Hide the data inside a capsule and control access to it.”
+Abstraction = “Hide the complex implementation and show only the necessary functionality.”
+Method overriding: Both Dog and Cat override the speak method from Animal.
+Polymorphism: The makeAnimalSpeak function treats Dog and Cat instances as objects of type Animal, demonstrating that the same method speak() behaves differently based on the object.
+ polymorphism is advantageous because it enables programmers to create objects with identical functionality, i.e., functions with identical names that operate identically. In some other areas of the OOP framework, you can, however, change some portions of the shared code or even the entire
+
+
+
